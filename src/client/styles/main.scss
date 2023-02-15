@@ -1,0 +1,250 @@
+.Reviews {
+
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background: white;
+  line-height: 1.43;
+  color: #484848;
+
+  #rApp {
+
+    .rBodyContainer {
+      display: block;
+      min-height: 100%;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .rPageContainer {
+      width: 90%;
+      margin: 3rem auto 3rem auto;
+    }
+
+    .rModalContainer { 
+      display: fixed;
+    }
+
+    .rReviewTitle {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 4rem;
+      color: #484848;
+    }
+
+    .rMoreReviews {
+      font-size: 16px;
+      font-weight: 500;
+      -webkit-writing-mode: horizontal-tb;
+      writing-mode: horizontal-tb;
+      cursor: pointer;
+    }
+
+    .rPaddingTop {
+      padding-top: 3rem;
+    }
+
+    .rModalButtonContainer {
+      margin-top: 1rem;
+      @media screen and (max-width: 744px) {
+        display: none;
+      }
+    }
+  }
+
+  #rReview {
+
+    .rReviewBox {
+      padding: 14px 18px 18px 0;
+      width: 100%;
+      line-height: 1.43;
+    }
+
+    .rViewBox {
+      display: table-cell;
+      vertical-align: middle;
+      padding-bottom: 0.65rem;
+    }
+
+    .rImageBox {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      height: 48px;
+      width: 48px;
+      margin-right: 1rem;
+      display: block;
+    }
+
+    .rCustomImage {
+      max-height: 48px;
+      width: auto;
+      display: table-cell;
+      vertical-align: middle;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+
+    .rReviewName {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.375rem;
+      margin: 0;
+    }
+
+    .rReviewDate {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.2857142857142858rem;
+      margin: 0;
+    }
+
+    .rFlexBox { 
+      display: inline-block;
+      width: 100%;
+    }
+
+    .rReviewText { 
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.375rem;
+      padding: 0 2rem 0 0;
+      overflow-wrap: break-word;
+    }
+  }
+
+  
+  #rReviews {
+    
+    .rReviewColumn { 
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      min-height: 10rem;
+      max-height: 40rem;
+      padding: 0 0 1.75rem 1.5rem;
+      flex-wrap: wrap;
+      width: 100%;
+
+      @media (min-width: 740px) {
+        width: 50%;
+      }
+    }
+  }
+
+  #rModal {
+
+    .rModalInner { 
+      vertical-align: middle;
+      background: white;
+      position: absolute;
+      z-index: 5;
+      width: 568px;
+      max-height: 95vh;
+      padding: 10px 24px 0px 24px;
+      
+      margin: 4rem 0 0 25%;
+      overflow: auto;
+      box-shadow: 0 0.01rem 0.8rem rgba(118,118,118,0.3);
+    }
+
+    .rModalHeader { 
+      font-size: 14px;
+      margin: 1rem 0 1rem 0;
+    }
+
+    .rModalBody { 
+      width: 504;
+      padding-bottom: 3rem;
+      margin: auto;
+    }
+
+    .rCloseButton { 
+      background: white;
+      border: 1px solid white;
+      padding: 20px;
+      margin: -20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rCloseButton:focus {
+      outline: none;
+    }
+
+    .rSvgButton { 
+      margin: 7px;
+      width: 16px;
+      height: 16px;
+      display: block;
+      fill: rgb(118, 118, 118);
+    }
+  }
+
+  #rModalBody {
+
+    .rReviewsHeader  { 
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 1rem;
+    }
+
+    .rImageBox { 
+      position: relative;
+      height: 48px;
+      width: 48px;
+      border-radius: 10rem;
+      margin-right: 1rem;
+      display: block;
+    }
+
+    .rCustomImage { 
+      height: 48px;
+      width: 48px;
+      display: block;
+      vertical-align: middle;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+
+    .rReviewBox { 
+      padding: 14px 18px 0 0;
+      line-height: 1.43;
+    }
+
+    .rViewBox { 
+      display: table-cell;
+      vertical-align: middle;
+      padding-bottom: 0.65rem;
+    }
+
+    .rReviewName  { 
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.375rem;
+      margin: 0;
+    }
+
+    .rReviewDate { 
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.2857142857142858rem;
+      margin: 0;
+    }
+
+    .rReviewText { 
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.375rem;
+      word-wrap: break-word;
+      padding: 0 2rem 0.5rem 0;
+    }
+  }
+}
